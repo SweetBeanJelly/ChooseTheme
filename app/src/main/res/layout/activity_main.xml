@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:srcCompat="@drawable/ic_light" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="현재 라이트 모드 입니다."
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="match_parent" >
+
+        <RadioButton
+            android:id="@+id/btnLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="라이트 모드" />
+
+        <RadioButton
+            android:id="@+id/btnDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다크 모드" />
+
+        <RadioButton
+            android:id="@+id/btnSystem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시스템 설정 모드" />
+    </RadioGroup>
+
+</LinearLayout>
